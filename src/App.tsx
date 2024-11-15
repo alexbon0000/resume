@@ -26,7 +26,7 @@ function App() {
       <section className='about_me_section' style={{backgroundColor:"rgb(60, 139, 102)"}} ref={aboutMeRef}>
         <div className='info_box'>
           <div className='myFase'>
-            <img src='./src/assets/myFace.png'/>
+            <img src='public/myFace.png'/>
           </div>
           <div className='text_about_me'>
             Привет! 
