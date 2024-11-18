@@ -24,7 +24,52 @@ function App() {
                 <li onClick={() => scrollToRef(contactsRef)}>Контакты</li>
               </ul>
       </header>
-      <section className='about_me_section' style={{backgroundColor:"rgb(60, 139, 102)"}} ref={aboutMeRef}>
+
+      <section className='test_section' style={{backgroundColor:"#334a5b"}}>
+        <div className='section_photo'>
+        <img src='/5.png' alt='мое фото'/>
+        </div>
+        <div className='section_text'>
+          <div>ПО</div>
+          <div className='right_text'>РТ</div>
+          <div className='left_text'>
+            <div>ФО</div>
+            <div className='fio_text'><span>БОНДАРЕНКО АЛЕКСЕЙ <br/><span className='front_text'>Frontend-разработчик</span></span></div>
+            </div>
+          <div className='right_text'>ЛИО</div>
+        </div>
+      </section>
+
+      <section  ref={aRef} style={{backgroundColor:"#7395AE"}}>
+        <div className='work_info_section'>
+          <h1>ОБРАЗОВАНИЕ</h1>
+          <div className='steps'>
+              {/* <div className='line'/> */}
+              <div className='step_box'>информация орцвислот</div>
+              <div className='line'/>
+              <div className='step_box'>информация орцвислот</div>
+              <div className='line'/>
+              <div className='step_box'>информация орцвислот</div>
+             
+          </div>
+        </div>
+      
+        {/* <div className='work_info_section_box'>
+          <p>На прежних местах работы занимался:</p>
+          <ul>
+            <li>Разработкой подгружаемых 3д моделей с анимацией (использовал библиотеку Three.js).</li>
+            <li>Разработкой графиков (используя konva.js).</li>
+            <li>Разработкой создания и проведения тестирования.</li>
+            <li>Разработкой приложения создания расписания для групп и распределения нагрузки на преподавателей для учебных заведений.</li>
+            <li>Разработкой приложения для ведения документации с возможностью сформировать отчет.</li>
+          </ul>
+          <p>Также использовал MobX и redux для управления состоянием, axios для связи с бекэндом, Ant Design, React Bootstrap, Material UI для UI. 
+          Есть опыт разработки на react native.</p>
+        </div> */}
+        
+      </section>
+
+      <section className='about_me_section' style={{backgroundColor:"#334a5b"}} ref={aboutMeRef}>
         <div className='info_box'>
           <div className={`animate__animated animate__backInLeft myFase`}>
             <img src='/me.webp' alt='картинка'/>
@@ -42,29 +87,12 @@ function App() {
             <DownOutlined />    
           </div>
         </div>
-        
       </section>
-      <section className='work_info_section' ref={aRef} style={{backgroundColor:"rgb(40, 100, 72)"}}>
-        <div className='work_info_section_box'>
-          <p>На прежних местах работы занимался:</p>
-          <ul>
-            <li>Разработкой подгружаемых 3д моделей с анимацией (использовал библиотеку Three.js).</li>
-            <li>Разработкой графиков (используя konva.js).</li>
-            <li>Разработкой создания и проведения тестирования.</li>
-            <li>Разработкой приложения создания расписания для групп и распределения нагрузки на преподавателей для учебных заведений.</li>
-            <li>Разработкой приложения для ведения документации с возможностью сформировать отчет.</li>
-          </ul>
-          <p>Также использовал MobX и redux для управления состоянием, axios для связи с бекэндом, Ant Design, React Bootstrap, Material UI для UI. 
-          Есть опыт разработки на react native.</p>
-        </div>
-        
-      </section>
-      <section style={{backgroundColor:"rgb(60, 139, 102)"}}>
-        Content
-      </section>
-      <footer ref={contactsRef} style={{backgroundColor:"rgb(40, 100, 72)"}}>
+
+      <footer ref={contactsRef} style={{backgroundColor:"#7395AE"}}>
         Footer
       </footer>
+
     </div>
   )
 }
