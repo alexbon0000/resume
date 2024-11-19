@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 import "./meSection.css";
 
-export const MeSection = forwardRef<HTMLDivElement>((props, ref) => {
+export const MeSection = forwardRef<HTMLDivElement>((_, ref) => {
     return (
         <section ref={ref} className='me_section' style={{backgroundColor:"#334a5b"}}>
         <div className='section_photo'>
