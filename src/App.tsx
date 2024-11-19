@@ -1,13 +1,15 @@
 
-import { DownOutlined } from '@ant-design/icons'
 import './App.css'
 import { useRef } from 'react'
 import 'animate.css';
+import { Header } from './components/header/header';
+import { MeSection } from './components/meSection/meSection';
+import { InfoSection } from './components/infoSection/infoSection';
 
 function App() {
 
-  const aboutMeRef = useRef<HTMLDivElement>(null);
-  const aRef = useRef<HTMLDivElement>(null);
+  const meSectionRef = useRef<HTMLDivElement>(null);
+  const infoSectionRef = useRef<HTMLDivElement>(null);
   const contactsRef = useRef<HTMLDivElement>(null);
 
   const scrollToRef = (ref: React.RefObject<HTMLElement>) => { 
@@ -18,43 +20,12 @@ function App() {
 
   return (
     <div className='box'>
-      <header>
-        <ul className="menu-items">
-                <li onClick={() => scrollToRef(aboutMeRef)}>Обо мне</li>
-                <li onClick={() => scrollToRef(contactsRef)}>Контакты</li>
-              </ul>
-      </header>
+      <Header scroll={scrollToRef} meSectionRef={meSectionRef} contactsRef={contactsRef} infoSectionRef={infoSectionRef}/>
+      <MeSection  ref={meSectionRef}/>
+      <InfoSection ref={infoSectionRef}/>
 
-      <section className='test_section' style={{backgroundColor:"#334a5b"}}>
-        <div className='section_photo'>
-        <img src='/5.png' alt='мое фото'/>
-        </div>
-        <div className='section_text'>
-          <div>ПО</div>
-          <div className='right_text'>РТ</div>
-          <div className='left_text'>
-            <div>ФО</div>
-            <div className='fio_text'><span>БОНДАРЕНКО АЛЕКСЕЙ <br/><span className='front_text'>Frontend-разработчик</span></span></div>
-            </div>
-          <div className='right_text'>ЛИО</div>
-        </div>
-      </section>
 
-      <section  ref={aRef} style={{backgroundColor:"#7395AE"}}>
-        <div className='work_info_section'>
-          <h1>ОБРАЗОВАНИЕ</h1>
-          <div className='steps'>
-              {/* <div className='line'/> */}
-              <div className='step_box'>информация орцвислот</div>
-              <div className='line'/>
-              <div className='step_box'>информация орцвислот</div>
-              <div className='line'/>
-              <div className='step_box'>информация орцвислот</div>
-             
-          </div>
-        </div>
-      
-        {/* <div className='work_info_section_box'>
+       {/* <div className='work_info_section_box'>
           <p>На прежних местах работы занимался:</p>
           <ul>
             <li>Разработкой подгружаемых 3д моделей с анимацией (использовал библиотеку Three.js).</li>
@@ -66,10 +37,9 @@ function App() {
           <p>Также использовал MobX и redux для управления состоянием, axios для связи с бекэндом, Ant Design, React Bootstrap, Material UI для UI. 
           Есть опыт разработки на react native.</p>
         </div> */}
-        
-      </section>
 
-      <section className='about_me_section' style={{backgroundColor:"#334a5b"}} ref={aboutMeRef}>
+
+      {/* <section className='about_me_section' style={{backgroundColor:"#334a5b"}} ref={aboutMeRef}>
         <div className='info_box'>
           <div className={`animate__animated animate__backInLeft myFase`}>
             <img src='/me.webp' alt='картинка'/>
@@ -87,7 +57,7 @@ function App() {
             <DownOutlined />    
           </div>
         </div>
-      </section>
+      </section> */}
 
       <footer ref={contactsRef} style={{backgroundColor:"#7395AE"}}>
         Footer

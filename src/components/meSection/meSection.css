@@ -1,0 +1,52 @@
+.me_section{
+    display: flex;
+    padding: 5%;
+
+    .section_photo{
+        width: 50%;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 70%;
+          }
+    }
+
+    .section_text{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-weight: 700;
+        font-family: "Advent Pro", sans-serif;
+        
+        div{
+            font-size: 23vh;
+            height: 25%;
+            display: flex;
+            align-items: center;
+        }
+
+        .right_text{
+            padding-left: 50%;
+        }
+
+        .left_text{
+            display: flex;
+            justify-content: space-around;
+            .fio_text{
+                font-size: 2.5vh;
+                font-family: "Montserrat", sans-serif;
+                color: aquamarine;
+                line-height: 3vh;
+
+                .front_text{
+                    color: white;
+                }
+            }
+        }
+    }
+}
