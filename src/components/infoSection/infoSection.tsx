@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import "./infoSection.css"
+import "./infoSection.css";
 
 export const InfoSection = forwardRef<HTMLDivElement>((props, ref) => {
     return (
