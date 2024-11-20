@@ -49,4 +49,94 @@
       }
     }
 
+    .skills_box{
+      display: flex;
+      height: 80%;
+      padding-top: 20px;
+
+      .skills_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 55%;
+
+        .skills_section{
+          height: 55%;
+        }
+
+        .quality_section{
+          height: 40%;
+        }
+
+        h2{
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        ul{
+          padding-top: 10px;
+          padding-left: 20px;
+        }
+        li{
+          padding-bottom: 10px;
+        }
+        .quality_list{
+          display: flex;
+          flex-flow: column wrap;
+          height: 65%;
+          width: 100%;
+        }
+        .quality{
+          width: 48%;
+          display: flex;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          .quality_text{
+            width: 60%;
+          }
+          progress{
+            width: 30%;
+            margin-left: 10px; 
+            -webkit-appearance: none;
+            appearance: none;
+            border-radius: 10px;
+            overflow: hidden;
+          }
+          progress::-webkit-progress-bar {
+             background-color: #f0f0f0;
+          }
+          progress::-webkit-progress-value {
+             background-color: #334a5b;
+            }
+          progress::-moz-progress-bar { 
+              background-color: #334a5b;
+             } 
+          progress::-webkit-progress-value, progress::-moz-progress-bar { 
+            transition: width 0.4s ease; 
+          }  
+        }
+      }
+      .skills_title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+
+        div{
+          line-height: 0.8;
+          font-family: "Advent Pro", sans-serif;
+          font-size: 13vw;
+          font-weight: 700;
+          letter-spacing: -5px;
+          
+          .skill_last{
+            letter-spacing: -11px;
+          }
+          .skill_center{
+            color: aquamarine;
+          }
+        }
+      }
+
+    }
+
     }
