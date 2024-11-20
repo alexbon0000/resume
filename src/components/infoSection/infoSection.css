@@ -62,7 +62,6 @@
 
         .skills_section{
           height: 55%;
-          padding-right: 20px;
         }
 
         .quality_section{
@@ -121,12 +120,12 @@
         flex-direction: column;
         justify-content: center;
         width: 40%;
-        padding-left: 10px;
+        padding-left: 40px;
 
         div{
           line-height: 0.8;
           font-family: "Advent Pro", sans-serif;
-          font-size: 12vw;
+          font-size: 11vw;
           font-weight: 700;
           letter-spacing: -5px;
           
