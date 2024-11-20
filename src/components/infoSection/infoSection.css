@@ -35,8 +35,12 @@
 
       .info_step{
         width: 30%;
-        /* border: 1px solid black; */
         text-align: center;
+
+        span{
+          color: aquamarine;
+          font-weight: bold;
+        }
       }
 
       .v_line{
