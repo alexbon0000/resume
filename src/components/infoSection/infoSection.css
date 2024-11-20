@@ -128,10 +128,9 @@
           font-family: "Advent Pro", sans-serif;
           font-size: 11vw;
           font-weight: 700;
-          letter-spacing: -5px;
           
           .skill_last{
-            letter-spacing: -11px;
+            letter-spacing: -6px;
           }
           .skill_center{
             color: aquamarine;
