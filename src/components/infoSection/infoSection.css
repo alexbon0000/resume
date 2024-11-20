@@ -27,4 +27,22 @@
         margin-right: 5px;
       }
     }
+
+    .info_steps_box{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+
+      .info_step{
+        width: 30%;
+        /* border: 1px solid black; */
+        text-align: center;
+      }
+
+      .v_line{
+        width: 2px;
+        background-color: #334a5b;
+      }
+    }
+
     }

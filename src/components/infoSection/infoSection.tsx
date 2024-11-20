@@ -16,6 +16,14 @@ export const InfoSection = forwardRef<HTMLDivElement>((_, ref) => {
               <div className='step_box'/>
               <div>2021 - по н. в.</div>
           </div>
+          <div className="info_steps_box">
+              <div className="info_step">Муниципальное бюджетное общеобразовательное учреждение г. Ивантеевка Городского округа Пушкинский Московской области <br/>
+              «Образовательный центр №5»</div>
+              <div className="v_line"/>
+              <div  className="info_step">Автономная некоммерческая образовательная организация высшего образования Центросоюза Российской Федерации «Российский университет кооперации» </div>
+              <div className="v_line"/>
+              <div  className="info_step">Федеральное государственное бюджетное образовательное учреждение высшего образования «Тверской государственный технический университет»</div>
+          </div>
         </div>        
       </section>
     )
