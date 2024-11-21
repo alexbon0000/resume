@@ -1,0 +1,43 @@
+.preview-block { 
+    width: 100%; 
+    max-width: 400px; /* Максимальная ширина блока превью */ 
+    margin: 20px auto; 
+    padding: 20px;
+     border: 1px solid #ccc; /* Граница для визуализации */ 
+     border-radius: 10px; /* Закругление углов */ 
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для создания объема */ 
+     text-align: center; /* Центрирование текста */
+      background-color: #fff; /* Цвет фона */ 
+    }
+
+    .preview-iframe { 
+        width: 100%; 
+        height: 200px; /* Высота iframe для отображения приложения */ 
+        border: none; /* Убираем стандартную границу iframe */ 
+        border-radius: 10px; /* Закругление углов для iframe */ 
+    }
+    
+    .preview-title { 
+        font-size: 1.5em; 
+        margin: 10px 0; /* Отступ сверху и снизу */ 
+        color: black;
+    } 
+    
+    .preview-description { 
+        font-size: 1em; 
+        color: #666; /* Цвет текста */ 
+        margin: 10px 0; /* Отступ сверху и снизу */ 
+    } 
+    
+    .preview-button { 
+        display: inline-block; 
+        padding: 10px 20px; 
+        background-color: #4caf50; /* Цвет кнопки */ 
+        color: #fff; /* Цвет текста кнопки */ 
+        text-decoration: none; /* Убирает подчеркивание */ 
+        border-radius: 5px; /* Закругление углов */ 
+        transition: background-color 0.3s ease; /* Плавный переход цвета */ 
+    } 
+    .preview-button:hover { 
+        background-color: #45a049; /* Цвет кнопки при наведении */
+    }

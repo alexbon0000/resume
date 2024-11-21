@@ -5,6 +5,7 @@ import 'animate.css';
 import { Header } from './components/header/header';
 import { MeSection } from './components/meSection/meSection';
 import { InfoSection } from './components/infoSection/infoSection';
+import { GithubOutlined, PhoneOutlined, WhatsAppOutlined } from '@ant-design/icons';
 
 function App() {
 
@@ -23,6 +24,15 @@ function App() {
       <Header scroll={scrollToRef} meSectionRef={meSectionRef} contactsRef={contactsRef} infoSectionRef={infoSectionRef}/>
       <MeSection  ref={meSectionRef}/>
       <InfoSection ref={infoSectionRef}/>
+      <section  style={{backgroundColor:"#334a5b"}}>
+      <div className="preview-block">
+        <iframe src="https://tree3-d.vercel.app/" className="preview-iframe" allowFullScreen={true}></iframe>
+        <div className="preview-title">Моё Приложение</div>
+        <p className="preview-description">Описание</p>
+        <a href="https://tree3-d.vercel.app/" target="_blank" className="preview-button">Посмотреть</a>
+      </div>
+
+      </section>
 
 
        {/* <div className='work_info_section_box'>
@@ -60,7 +70,29 @@ function App() {
       </section> */}
 
       <footer ref={contactsRef} style={{backgroundColor:"#7395AE"}}>
-        Footer
+        <div className='footer_title'>
+          <span>СВЯЗЬ</span> СО МНОЙ
+        </div>
+        <div className='footer_href_box'>
+         <div className='footer_href'>
+          <a  href='https://github.com/alexbon0000' target="blank" title='GitHub'>
+            <GithubOutlined className='icon' />
+          </a>
+        </div>
+        <div className='v_line'/>
+        <div className='footer_href'>
+          <a href='https://wa.me/89000160434' target="blank" title='WhatsApp'>
+          <WhatsAppOutlined className='icon' />
+          </a>
+        </div>
+        <div className='v_line'/>
+        <div className='footer_href'>
+          <a href="tel:+79000160434" target="blank" title='Мой номер'>
+            <PhoneOutlined className='icon'/>
+          </a>
+        </div> 
+        </div>
+        
       </footer>
 
     </div>
