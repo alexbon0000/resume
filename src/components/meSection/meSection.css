@@ -58,6 +58,8 @@
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
 
         .section_photo{
             width: 80%;

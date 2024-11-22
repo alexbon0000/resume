@@ -141,3 +141,74 @@
     }
 
     }
+
+    /* Адаптация для планшетов */ 
+@media (max-width: 768px){
+  .work_info_section{
+    .steps_box{
+      display: flex;
+      height: 500px;
+      .steps{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+        div{
+          font-size: 12px;
+        }
+
+        .step_box{
+          width: 20px;
+          height: 20px;
+          background-color: #334a5b;
+          margin-right: 0px;
+          margin-top: 5px;
+        }
+      
+        .line{
+          width: 4px;
+          height: 100px;
+        }
+      }
+    }
+    .info_steps_box{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0px;
+
+      .info_step{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      .v_line{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 30%;
+        height: 2px;
+        background-color: #334a5b;
+      }
+    }
+    .skills_box{
+      flex-direction: column;
+      .skills_info{
+        width: 100%;
+        font-size: 14px;
+        .quality{
+          width: 100%;
+        }
+        li{
+          font-size: 14px;
+        }
+      }
+      .skills_title{
+        display: none;
+      }
+    }
+  }
+}
