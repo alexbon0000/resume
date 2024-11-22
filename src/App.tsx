@@ -15,7 +15,7 @@ function App() {
 
   const scrollToRef = (ref: React.RefObject<HTMLElement>) => { 
     if (ref.current) { 
-      window.scrollTo({ top: ref.current.offsetTop, behavior: 'smooth', }); 
+      window.scrollTo({ top: ref.current.offsetTop - 50, behavior: 'smooth', }); 
     }
   }
 
