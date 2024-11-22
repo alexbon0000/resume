@@ -57,6 +57,7 @@
         width: 100%;
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: space-around;
 
         .section_photo{
             width: 80%;
