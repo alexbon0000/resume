@@ -50,3 +50,55 @@
         }
     }
 }
+
+/* Адаптация для планшетов */ 
+@media (max-width: 768px){
+    .me_section{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .section_photo{
+            width: 80%;
+        }
+
+        .section_text{
+            width: 400px;
+            height: 400px;
+            div{
+                font-size: 130px;
+            }
+
+            .left_text{
+                justify-content: space-between;
+                .fio_text{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для телефонов */ 
+@media (max-width: 480px){
+    .me_section{
+        .section_photo{
+            width: 80%;
+        }
+
+        .section_text{
+            width: 300px;
+            height: 300px;
+            div{
+                font-size: 90px;
+            }
+            .left_text{
+                .fio_text{
+                    font-size: 10px;
+                    line-height: 12px;
+                }
+            }
+        }
+}
+}

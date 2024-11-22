@@ -1,7 +1,6 @@
 
 import './App.css'
 import { useRef } from 'react'
-import 'animate.css';
 import { Header } from './components/header/header';
 import { MeSection } from './components/meSection/meSection';
 import { InfoSection } from './components/infoSection/infoSection';
@@ -12,6 +11,7 @@ function App() {
   const meSectionRef = useRef<HTMLDivElement>(null);
   const infoSectionRef = useRef<HTMLDivElement>(null);
   const contactsRef = useRef<HTMLDivElement>(null);
+  const workSection = useRef<HTMLDivElement>(null);
 
   const scrollToRef = (ref: React.RefObject<HTMLElement>) => { 
     if (ref.current) { 
@@ -21,16 +21,22 @@ function App() {
 
   return (
     <div className='box'>
-      <Header scroll={scrollToRef} meSectionRef={meSectionRef} contactsRef={contactsRef} infoSectionRef={infoSectionRef}/>
+      <Header scroll={scrollToRef} meSectionRef={meSectionRef} contactsRef={contactsRef} infoSectionRef={infoSectionRef} workSection={workSection}/>
       <MeSection  ref={meSectionRef}/>
       <InfoSection ref={infoSectionRef}/>
-      <section  style={{backgroundColor:"#334a5b"}}>
-      <div className="preview-block">
+      <section ref={workSection} className='section_work'  style={{backgroundColor:"#334a5b"}}>
+        <div className='section_work_title'>
+          МОИ <span>РАБОТЫ</span>
+        </div>
+        <div className='projects'>
+
+        </div>
+      {/* <div className="preview-block">
         <iframe src="https://tree3-d.vercel.app/" className="preview-iframe" allowFullScreen={true}></iframe>
         <div className="preview-title">Моё Приложение</div>
         <p className="preview-description">Описание</p>
         <a href="https://tree3-d.vercel.app/" target="_blank" className="preview-button">Посмотреть</a>
-      </div>
+      </div> */}
 
       </section>
 

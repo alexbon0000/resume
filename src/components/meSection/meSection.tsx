@@ -3,9 +3,9 @@ import "./meSection.css";
 
 export const MeSection = forwardRef<HTMLDivElement>((_, ref) => {
     return (
-        <section ref={ref} className='me_section' style={{backgroundColor:"#334a5b"}}>
+      <section ref={ref} className='me_section' style={{backgroundColor:"#334a5b"}}>
         <div className='section_photo'>
-        <img src='/5.png' alt='мое фото'/>
+          <img src='/5.png' alt='мое фото'/>
         </div>
         <div className='section_text'>
           <div>ПО</div>

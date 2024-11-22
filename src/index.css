@@ -128,3 +128,13 @@ footer{
   }
   
 }
+
+/* Адаптация для планшетов */ 
+@media (max-width: 768px){
+  section{
+    width:  100%;
+    height: auto;
+    padding: 5%;
+    color: white;
+  }
+}

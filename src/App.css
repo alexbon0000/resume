@@ -1,3 +1,27 @@
+.section_work{
+    min-height: 100vh;
+    height: auto;
+}
+
+.section_work_title{
+    height: 10%;
+    cursor: default;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 11vh;
+    font-weight: 700;
+    line-height: 0.7;
+    span{
+        color: aquamarine;
+    }
+}
+
+.projects{
+    height: 190vh;
+    border: 1px solid black;
+}
+
+
+
 .preview-block { 
     width: 100%; 
     max-width: 400px; /* Максимальная ширина блока превью */ 
