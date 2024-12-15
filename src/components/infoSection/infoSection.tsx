@@ -3,7 +3,7 @@ import "./infoSection.css";
 
 export const InfoSection = forwardRef<HTMLDivElement>((_, ref) => {
     return (
-        <section ref={ref} style={{backgroundColor:"#7395AE"}}>
+        <section ref={ref} className="info-section">
         <div className='work_info_section'>
           <h1>ОБРАЗОВАНИЕ</h1>
           <div className="steps_box">
@@ -55,7 +55,7 @@ export const InfoSection = forwardRef<HTMLDivElement>((_, ref) => {
                     </div>
                     <div className="quality">
                     <div className="quality_text">РАБОТА В КОМАНДЕ</div>
-                      <progress value="70" max="100"></progress>
+                      <progress value="90" max="100"></progress>
                     </div>
                     <div className="quality">
                     <div className="quality_text">ПУНКТУАЛЬНОСТЬ</div>

@@ -33,13 +33,6 @@
      text-align: center; /* Центрирование текста */
       background-color: #fff; /* Цвет фона */ 
     }
-
-    .preview-iframe { 
-        width: 100%; 
-        height: 200px; /* Высота iframe для отображения приложения */ 
-        border: none; /* Убираем стандартную границу iframe */ 
-        border-radius: 10px; /* Закругление углов для iframe */ 
-    }
     
     .preview-title { 
         font-size: 1.5em; 

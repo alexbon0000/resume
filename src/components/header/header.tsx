@@ -8,13 +8,12 @@ infoSectionRef: React.RefObject<HTMLElement>;
 workSection: React.RefObject<HTMLElement>;
 }
 export const Header = (props:HeaderProps) => {
-    const {meSectionRef, contactsRef, infoSectionRef, workSection} = props;
+    const {meSectionRef, contactsRef, infoSectionRef} = props;
     return(
         <header>
         <ul className="menu-items">
                 <li onClick={() => props.scroll(meSectionRef)}>Главная</li>
                 <li onClick={() => props.scroll(infoSectionRef)}>Обо мне</li>
-                <li onClick={() => props.scroll(workSection)}>Работы</li>
                 <li onClick={() => props.scroll(contactsRef)}>Контакты</li>
               </ul>
       </header>

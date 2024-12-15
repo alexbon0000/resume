@@ -24,6 +24,7 @@ header{
         color: white;
         font-size: 16px;
         transition: 0.5s;
+        font-family: "Montserrat", sans-serif;
       }
       li:hover{
         font-size: 18px;
